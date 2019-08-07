@@ -1,32 +1,51 @@
+
 .letter-btn{
 display: grid;
+/* grid-column-start: 2; */
+/* grid-column: 3 / span 2;
+grid-row: third-line / 4; */
 grid-template-columns: repeat(5,20%) ;
 grid-template-rows: repeat(6,auto);
 height: 50%;
 width: 50%;
-opacity: 0;
+
 }
 
-html{
+.container{
     display: grid;
-    grid-template-columns: repeat(2,50%) ;
-    grid-template-rows: repeat(2,50%);
+}
+
+body{
+    
     background-image: url("file:///Users/chighalimouknass/Downloads/IMG_7784.JPG");
-    height: 500px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    /* height: 50%;  */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    /* grid-template-columns: 33% 33% 33%; */
+    /* grid-template-rows: 33% 33% 33% ;  */
+    /* grid-column-gap: 5%;  */
+    /* grid-row-gap: 5%; */
 
 }
 
 .btn{
-    background-color: #808FE8;
+    background-color:#E8440E;
     color: white;
+    opacity: .5;
+}
+.btn:hover{
+    background-color: #FF321B;
+    transition: '10s';
+    visibility: visible;
+    opacity: 1;
+
 
 }
 
 .btn-dark{
     background-color: white;
+    visibility: hidden;
 }
 
 .container{
