@@ -93,7 +93,13 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: initial;
     opacity: 0;
 }
-
+#lives{
+    color: azure;
+    margin-left: 0em;
+    font-size: xx-large;
+    margin-right: -4em;
+    margin-bottom: 25em;
+}
 #playBtn:hover{
     background-color: rgb(94, 70, 67);
     color: white;
