@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    margin-left: 17em;
+    margin-left: 12em;
     font-size: -webkit-xxx-large;
-    margin-top: 2em;
+    margin-top: 0em;
     color: rgb(240, 232, 232);
 }
 .container {
@@ -66,8 +66,8 @@ body{
 display: none; 
 position: relative;
 justify-content: center;
-margin-left: 15em;
-margin-top: 53em;
+margin-left: 5em;
+margin-top: 35em;
 margin-right: auto;
 padding: 2px;
 outline: none;
