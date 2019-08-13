@@ -1,53 +1,111 @@
-
-.letter-btn{
-display: grid;
-/* grid-column-start: 2; */
-/* grid-column: 3 / span 2;
-grid-row: third-line / 4; */
-grid-template-columns: repeat(5,20%) ;
-grid-template-rows: repeat(6,auto);
-height: 50%;
-width: 50%;
-
+.output{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    margin-left: 13em;
+    font-size: -webkit-xxx-large;
+    margin-top: 1em;
+    color: rgb(240, 232, 232);
+}
+.container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
 }
 
-.container{
-    display: grid;
+html {
+    background: url("file:///Users/chighalimouknass/Desktop/test/hangman/hangman.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
 body{
-    
-    background-image: url("file:///Users/chighalimouknass/Downloads/IMG_7784.JPG");
-    /* height: 50%;  */
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    /* grid-template-columns: 33% 33% 33%; */
-    /* grid-template-rows: 33% 33% 33% ;  */
-    /* grid-column-gap: 5%;  */
-    /* grid-row-gap: 5%; */
-
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    align-content: end;
+}
+.lives{
+    font-size: 200%;
+    align-self: start;
+    margin-top: 15px;
 }
 
 .btn{
-    background-color:#E8440E;
-    color: white;
-    opacity: .5;
+    color: rgb(220, 9, 9);
+    opacity: .8;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    padding: .8rem .7rem;
+    display: inline-block;
+    border-radius: 3px;
+    margin: .5rem;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff !important;
+    background-image: linear-gradient(-45deg, #100101 0, #d2d2b8 100%);
+    box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
 }
 .btn:hover{
-    background-color: #FF321B;
+    background-color: rgb(232, 71, 53);
     transition: '10s';
     visibility: visible;
     opacity: 1;
-
-
 }
 
-.btn-dark{
-    background-color: white;
-    visibility: hidden;
+.letter-btn{
+display: none; 
+position: relative;
+justify-content: center;
+margin-left: 8em;
+margin-top: 40em;
+margin-right: auto;
+padding: 2px;
+outline: none;
+cursor: pointer;
+visibility: visible;
+font-display: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container{
-    color: #FA2820;
+#playBtn{
+    shape-rendering: auto;
+    color: rgb(228, 223, 222);
+    font-weight: bold;
+    font-stretch: wider;
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    font-size: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55em;
+    margin-top: 37em;
+    background-color: initial;
+    opacity: 0;
+}
+
+#playBtn:hover{
+    background-color: rgb(94, 70, 67);
+    color: white;
+    background-image: linear-gradient(-45deg, #ac9999 0, #83a0bf 100%);
+    box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
+}
+#lives{
+    color: azure;
+    position: relative;;
+    margin-left: 0em;
+    font-size: xx-large;
+    margin-right: -4em;
+    margin-bottom: 17em;
 }
