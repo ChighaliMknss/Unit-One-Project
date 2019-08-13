@@ -1,45 +1,35 @@
-/* 
-.letters-btn{
-display: grid; 
-flex-direction: column;
-grid-template-columns: repeat(5,20%) ;
-grid-template-rows: repeat(6,auto);
-height: 100%; 
-width: 100%; 
-justify-content: center; 
-visibility: hidden;
-
+.output{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    margin-left: 17em;
+    font-size: -webkit-xxx-large;
+    margin-top: 2em;
+    color: rgb(240, 232, 232);
+}
+.container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
 }
 
-    
-/* } */
-
-/*  
-}
-
-
-
-
-
-
-
- */ 
-
- body{
-    align-items: center;
-    align-content: end;
-    background: url(file:///Users/chighalimouknass/Downloads/IMG_7784.JPG) no-repeat center center fixed;  
+html {
+    background: url("file:///Users/chighalimouknass/Desktop/test/hangman/hangman.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
- }
- 
- .btn:hover{
-    background-color: #FF321B;
-    transition: '10s';
-    visibility: visible;
-    opacity: 1;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    align-content: end;
 }
 .lives{
     font-size: 200%;
@@ -47,47 +37,75 @@ visibility: hidden;
     margin-top: 15px;
 }
 
-.container{
-
-   position: relative;
-
-}
-
-.run-btn{
-    text-align: center;
-    width: 90px;
-    height: 40px;
-    font-size: 100%;
-    justify-content: center;
-    margin-top: 5px;
-    align-items: center;
-    margin-left: 50%;
-    margin-top: 3%;
-}
-
-footer{
-    justify-content: center;
-}
 .btn{
-    background-color: #4A69FF;
-    color: azure;
+    color: rgb(220, 9, 9);
     opacity: .8;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    padding: .8rem .7rem;
+    display: inline-block;
+    border-radius: 3px;
+    margin: .5rem;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff !important;
+    background-image: linear-gradient(-45deg, #100101 0, #d2d2b8 100%);
+    box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
 }
-
 .btn:hover{
-    background-color: #FF321B;
+    background-color: rgb(232, 71, 53);
     transition: '10s';
     visibility: visible;
     opacity: 1;
 }
 
 .letter-btn{
-justify-content: center; 
-margin-left: 400px;
+display: none; 
+position: relative;
+justify-content: center;
+margin-left: 15em;
+margin-top: 53em;
+margin-right: auto;
+padding: 2px;
+outline: none;
+cursor: pointer;
 visibility: visible;
-margin-top: 31%;
-margin-bottom: auto;
+font-display: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+#playBtn{
+    shape-rendering: auto;
+    color: rgb(228, 223, 222);
+    font-weight: bold;
+    font-stretch: wider;
+    text-align: center;
+    width: 150px;
+    height: 80px;
+    font-size: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55em;
+    margin-top: 37em;
+    background-color: initial;
+    opacity: 0;
+}
+
+#playBtn:hover{
+    background-color: rgb(94, 70, 67);
+    color: white;
+    background-image: linear-gradient(-45deg, #ac9999 0, #83a0bf 100%);
+    box-shadow: 0 3px 13px 0 rgba(14, 9, 73, 0.2),
+    0 11px 21px 0 rgba(255, 166, 220, 0.004);
+}
+#lives{
+    color: azure;
+    margin-left: 0em;
+    font-size: xx-large;
+    margin-right: -4em;
+    margin-bottom: 25em;
 
 }
